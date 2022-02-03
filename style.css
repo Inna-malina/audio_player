@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__header {
+    background: black;
+    width: 100%;
+}
+
+.header__section-contaner {
+    padding: 5px 0px;
+}
+
+.contaner {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.contaner__header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width: 1440px) {
+    .contaner {
+        padding: 0px 20px;
+    }
+}
+
+.header__box-logo {
+    cursor: pointer;
+    background-image: url('./svg/logo.svg');
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    width: 51px;
+    height: 51px;
+    transition: all 0.2s ease;
+}
+
+.header__box-logo:hover {
+    filter: none;
+}
+
+.header__menu-contaner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header__menu-contaner>:not(:last-child) {
+    margin: 0px 40px 0px 0px;
+}
+
+.header__menu-list {
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.header__menu-list:hover {
+    color: #bdae82;
+}
+
+/* ------------main--------------- */
+.section__main {
+    background-image: url('./images/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -240px;
+    width: 100%;
+    height: calc(100vh - 120px);
+
+}
+
+
+.contaner__main-buttonbox {
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main__buttonbox-contaner {
+    cursor: pointer;
+    background-image: url('./svg/play.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    transition: all 0.2s ease;
+}
+
+.main__buttonbox-contaner:hover {
+    filter: brightness(.85);
+}
+
+
+/* ------------footer--------------- */
+.section__footer {
+    background: black;
+    width: 100%;
+}
+
+.footer__section-contaner {
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.contaner {}
+
+.contaner__footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__box {}
+
+.footer__box-years {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer__box-years>:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
+
+.year__item {}
+
+.year__item a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.year__item a:hover {
+    color: #bdae82;
+}
+
+
+.footer__box-stadies {}
+
+.stadies__item a {
+    display: block;
+    background-image: url('./svg/rss.svg');
+    width: 135px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease;
+
+}
+
+.stadies__item a:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
