@@ -23,11 +23,11 @@
                     </div>
                     <nav class="header__box-menu">
                         <ul class="header__menu-contaner">
-                            <li class="header__menu-list">Соловей</li>
-                            <li class="header__menu-list">Дрозд</li>
-                            <li class="header__menu-list">Малиновка</li>
-                            <li class="header__menu-list">Жаворонок</li>
-                            <li class="header__menu-list">Славка</li>
+                            <li class="header__menu-list list-normal" data-bird="solovey">Соловей</li>
+                            <li class="header__menu-list list-normal" data-bird="drozd">Дрозд</li>
+                            <li class="header__menu-list list-normal" data-bird="zarynka">Малиновка</li>
+                            <li class="header__menu-list list-normal" data-bird="javoronok">Жаворонок</li>
+                            <li class="header__menu-list list-normal" data-bird="slavka">Славка</li>
                         </ul>
                     </nav>
                 </div>
@@ -36,7 +36,7 @@
         <main class="section__main" data-forest="forest">
             <div class="main__section-contaner contaner">
                 <div class="contaner__main-buttonbox main__buttonbox">
-                    <div class="main__buttonbox-contaner"></div>
+                    <div class="main__buttonbox-contaner play-btn"></div>
                 </div>
             </div>
 
@@ -57,8 +57,10 @@
                 </div>
             </div>
         </footer>
-    </div>
+        <audio src="./sounds/forest.mp3"></audio>
 
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

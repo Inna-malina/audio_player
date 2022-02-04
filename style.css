@@ -69,9 +69,13 @@ body {
     margin: 0px 40px 0px 0px;
 }
 
-.header__menu-list {
+.list-normal {
     color: white;
     transition: all 0.2s ease;
+}
+
+.list-active {
+    color: #bdae82;
 }
 
 .header__menu-list:hover {
@@ -99,9 +103,19 @@ body {
 }
 
 
-.main__buttonbox-contaner {
+.play-btn {
     cursor: pointer;
     background-image: url('./svg/play.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    transition: all 0.2s ease;
+}
+
+.pause-btn {
+    cursor: pointer;
+    background-image: url('./svg/pause.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 160px;
