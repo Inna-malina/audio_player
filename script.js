@@ -29,6 +29,7 @@ button.addEventListener('click', function () {
 //смена треков по кликам на меню
 let birdsList = document.querySelector('.header__menu-contaner');
 let birds = document.querySelectorAll('.header__menu-list');
+let mainPhoto = document.querySelector('.section__main');
 
 function hightlight() {
     for (let i = 0; i < birds.length; i++) {
@@ -52,6 +53,7 @@ birdsList.addEventListener('click', function (event) {
     let action = event.target.dataset.bird;
 
     audio.src = `./sounds/${action}.mp3`;
+    mainPhoto.style.backgroundImage = `url('./images/${action}.jpg')`;
     playAudio();
 
 });
@@ -61,5 +63,6 @@ let logo = document.querySelector('.header__box-logo');
 
 logo.addEventListener('click', function () {
     audio.src = "./sounds/forest.mp3";
+    mainPhoto.style.backgroundImage = `url('./images/forest.jpg')`;
     playAudio();
-})
+});
