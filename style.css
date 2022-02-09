@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 }
 
 .section__header {
@@ -125,21 +126,21 @@ body {
     background-image: url('./images/forest.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -240px;
+    background-position-y: -475px;
     width: 100%;
-    height: calc(100vh - 120px);
+    /* height: calc(100vh - 120px); */
     transition: all 0.9s ease;
 }
 
 @media(max-width: 1440px) {
     .section__main {
-        height: calc(100vh - 110px);
+        /* height: calc(100vh - 110px); */
     }
 }
 
 @media(max-width: 1365px) {
     .section__main {
-        height: calc(100vh - 110px);
+        /* height: calc(100vh - 110px); */
         background-size: inherit;
         background-repeat: no-repeat;
         background-position-y: -475px;
